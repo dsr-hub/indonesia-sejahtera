@@ -4,135 +4,140 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Indonesia Sejahtera - Buku oleh Dipo Satria Ramli</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
-      font-family: 'Inter', sans-serif;
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #ffffff;
+      color: #2c3e50;
+      line-height: 1.6;
     }
-    .book-shadow {
-      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    header {
+      background: #0c1d3c;
+      color: white;
+      padding: 80px 20px 60px;
+      text-align: center;
     }
-    .header-bg {
-      background: linear-gradient(135deg, #0c1d3c 0%, #1a2b4f 100%);
+    header img {
+      max-width: 350px;
+      width: 100%;
+      height: auto;
+      margin-bottom: 40px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+      border-radius: 4px;
+    }
+    header h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+      color: white;
+    }
+    header p {
+      font-size: 18px;
+      max-width: 600px;
+      margin: 10px auto 0;
+      color: white;
+    }
+    section {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    section h2 {
+      font-size: 24px;
+      color: #0c1d3c;
+      margin-bottom: 10px;
+    }
+    section ul {
+      padding-left: 25px;
+      margin: 20px 0;
+    }
+    section ul li {
+      list-style-type: disc;
+      margin-bottom: 8px;
+      padding-left: 5px;
+      display: list-item;
+    }
+    iframe {
+      width: 100%;
+      height: 700px;
+      border: none;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background-color: #f4f4f4;
+      font-size: 14px;
+      color: #888;
+    }
+    
+    @media (max-width: 768px) {
+      header img {
+        max-width: 280px;
+      }
+      header h1 {
+        font-size: 28px;
+      }
+      header p {
+        font-size: 16px;
+      }
+      section ul {
+        padding-left: 20px;
+      }
     }
   </style>
 </head>
-<body class="bg-white text-gray-800">
+<body>
 
-<header class="header-bg text-white py-16 px-4 text-center">
-  <div class="max-w-4xl mx-auto">
-    <img src="Buku_IndonesiaSejahtera_Cover.png" 
-         alt="Cover Buku Indonesia Sejahtera" 
-         class="mx-auto mb-10 rounded-lg book-shadow max-w-sm w-full h-auto" 
-         style="max-width: 350px;" />
-    
-    <h1 class="text-4xl md:text-5xl font-bold mb-4 text-white">Indonesia Sejahtera</h1>
-    
-    <p class="text-xl md:text-2xl mb-6 max-w-3xl mx-auto leading-relaxed text-white">
-      Roadmap Ekonomi Menuju Pertumbuhan Tinggi Yang Berkelanjutan dan Pro-Rakyat
-    </p>
-    
-    <p class="text-lg font-semibold text-white">
-      Buku oleh Dipo Satria Ramli
-    </p>
-  </div>
+<header>
+  <img src="Buku_IndonesiaSejahtera_Cover.png" alt="Cover Buku Indonesia Sejahtera" />
+  <h1>Indonesia Sejahtera</h1>
+  <p>Roadmap Ekonomi Menuju Pertumbuhan Tinggi Yang Berkelanjutan dan Pro-Rakyat</p>
+  <p><strong>Buku oleh Dipo Satria Ramli</strong></p>
 </header>
 
-<main class="max-w-4xl mx-auto py-16 px-4">
-  
-  <section class="mb-16">
-    <h2 class="text-3xl font-bold text-gray-900 mb-6">Tentang Buku Ini</h2>
-    <div class="prose prose-lg max-w-none">
-      <p class="text-gray-700 leading-relaxed mb-6">
-        Berdasarkan pemikiran mendiang Rizal Ramli dan riset Dipo Satria Ramli, buku ini menawarkan peta jalan ekonomi baru untuk Indonesia: melawan stagnasi, memperjuangkan kesejahteraan, dan mendorong pertumbuhan tinggi yang nyata. Tanpa jargon — hanya strategi praktis dan pro-rakyat.
-      </p>
-      
-      <p class="text-gray-700 leading-relaxed mb-4">
-        Untuk membangun ekonomi yang kuat, sebuah <em>blueprint</em> nasional harus memenuhi tiga syarat utama:
-      </p>
-      
-      <ul class="space-y-4 mb-6">
-        <li class="flex items-start">
-          <span class="inline-block w-2 h-2 bg-blue-600 rounded-full mt-3 mr-4 flex-shrink-0"></span>
-          <div>
-            <strong class="text-gray-900">Menyeluruh</strong>: agar seluruh kementerian, lembaga, dan pelaku pasar bisa bekerja dalam satu arah yang sama.
-          </div>
-        </li>
-        <li class="flex items-start">
-          <span class="inline-block w-2 h-2 bg-blue-600 rounded-full mt-3 mr-4 flex-shrink-0"></span>
-          <div>
-            <strong class="text-gray-900"><em>Sophisticated</em></strong>: masalah-masalah bangsa seperti kemiskinan contohnya tidak bisa diselesaikan dengan pendekatan tunggal. Diperlukan pemahaman dari berbagai sudut pandang — sosial, struktural, spasial — untuk menghasilkan solusi yang relevan dan berdampak.
-          </div>
-        </li>
-        <li class="flex items-start">
-          <span class="inline-block w-2 h-2 bg-blue-600 rounded-full mt-3 mr-4 flex-shrink-0"></span>
-          <div>
-            <strong class="text-gray-900">Bekerja secara tidak langsung <em>(indirect)</em></strong>: bukan dengan komando langsung, tapi dengan menciptakan insentif dan struktur kebijakan yang membuat pelaku ekonomi bergerak ke arah yang sama secara otomatis.
-          </div>
-        </li>
-      </ul>
-      
-      <p class="text-gray-700 leading-relaxed mb-6">
-        Kebijakan yang baik tak perlu mengatur tiap detail, cukup membangun arah dan sinyal yang tepat.
-      </p>
-      
-      <p class="text-gray-700 leading-relaxed">
-        Buku ini akan segera diluncurkan dan ditujukan bagi teknokrat, birokrat, dan akademisi. Setiap bab dilengkapi dengan konsep kunci ekonomi dan daftar tindakan (to-do checklist) agar bisa dijalankan secara paralel di berbagai tingkatan. Misalnya, pemerintah daerah dapat menggunakan panduan ini untuk memaksimalkan belanja daerah mereka, sambil tetap terkoneksi dengan misi nasional.
-      </p>
-    </div>
-  </section>
-
-  <section class="mb-16">
-    <h2 class="text-3xl font-bold text-gray-900 mb-6">Apa yang Akan Anda Pelajari?</h2>
-    <ul class="space-y-4">
-      <li class="flex items-start">
-        <span class="inline-block w-2 h-2 bg-orange-500 rounded-full mt-3 mr-4 flex-shrink-0"></span>
-        <span class="text-gray-700">Strategi memberantas korupsi tanpa kompromi</span>
-      </li>
-      <li class="flex items-start">
-        <span class="inline-block w-2 h-2 bg-orange-500 rounded-full mt-3 mr-4 flex-shrink-0"></span>
-        <span class="text-gray-700">Reformasi industri & ekspor untuk menciptakan jutaan pekerjaan</span>
-      </li>
-      <li class="flex items-start">
-        <span class="inline-block w-2 h-2 bg-orange-500 rounded-full mt-3 mr-4 flex-shrink-0"></span>
-        <span class="text-gray-700">Program tunai langsung & subsidi cerdas</span>
-      </li>
-      <li class="flex items-start">
-        <span class="inline-block w-2 h-2 bg-orange-500 rounded-full mt-3 mr-4 flex-shrink-0"></span>
-        <span class="text-gray-700">Pendekatan desentralisasi & eksekusi profesional</span>
-      </li>
-      <li class="flex items-start">
-        <span class="inline-block w-2 h-2 bg-orange-500 rounded-full mt-3 mr-4 flex-shrink-0"></span>
-        <span class="text-gray-700">Desain pertumbuhan tanpa ketergantungan pada pembiayaan utang berlebihan</span>
-      </li>
-    </ul>
-  </section>
-
-  <section id="signup" class="bg-gray-50 rounded-xl p-8">
-    <h2 class="text-3xl font-bold text-gray-900 mb-4 text-center">Daftar untuk Update Buku</h2>
-    <p class="text-gray-700 text-center mb-8">
-      Isi nama, email, dan nomor HP untuk jadi yang pertama mendapatkan info bukunya.
-    </p>
-    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScGOs3Ad3E6kkIW2UqIXuiPksK96NbvbfA3sNy9yzbbaQpLQw/viewform?embedded=true" 
-              width="100%" 
-              height="700" 
-              frameborder="0" 
-              marginheight="0" 
-              marginwidth="0"
-              class="w-full">
-        Loading…
-      </iframe>
-    </div>
-  </section>
-
-</main>
-
-<footer class="bg-gray-100 text-center py-8 px-4">
-  <p class="text-gray-600">
-    &copy; 2025 Dipo Satria Ramli. Kami tidak akan mengirim spam. Hanya info penting seputar buku ini.
+<section>
+  <h2>Tentang Buku Ini</h2>
+  <p>
+    Berdasarkan pemikiran mendiang Rizal Ramli dan riset Dipo Satria Ramli, buku ini menawarkan peta jalan ekonomi baru untuk Indonesia: melawan stagnasi, memperjuangkan kesejahteraan, dan mendorong pertumbuhan tinggi yang nyata. Tanpa jargon — hanya strategi praktis dan pro-rakyat.
   </p>
+  <p>Untuk membangun ekonomi yang kuat, sebuah <em>blueprint</em> nasional harus memenuhi tiga syarat utama:</p>
+    <ul>
+      <li><strong>Menyeluruh</strong>: agar seluruh kementerian, lembaga, dan pelaku pasar bisa bekerja dalam satu arah yang sama.</li>
+      <li><strong><em>Sophisticated</em></strong>: masalah-masalah bangsa seperti kemiskinan contohnya tidak bisa diselesaikan dengan pendekatan tunggal. Diperlukan pemahaman dari berbagai sudut pandang — sosial, struktural, spasial — untuk menghasilkan solusi yang relevan dan berdampak.</li>
+      <li><strong>Bekerja secara tidak langsung <em>(indirect)</em></strong>: bukan dengan komando langsung, tapi dengan menciptakan insentif dan struktur kebijakan yang membuat pelaku ekonomi bergerak ke arah yang sama secara otomatis. </li>
+    </ul>
+  <p>
+    Kebijakan yang baik tak perlu mengatur tiap detail, cukup membangun arah dan sinyal yang tepat.
+  </p>
+  <p>
+    Buku ini akan segera diluncurkan dan ditujukan bagi teknokrat, birokrat, dan akademisi. Setiap bab dilengkapi dengan konsep kunci ekonomi dan daftar tindakan (to-do checklist) agar bisa dijalankan secara paralel di berbagai tingkatan. Misalnya, pemerintah daerah dapat menggunakan panduan ini untuk memaksimalkan belanja daerah mereka, sambil tetap terkoneksi dengan misi nasional.
+  </p>
+</section>
+
+<section>
+  <h2>Apa yang Akan Anda Pelajari?</h2>
+  <ul>
+    <li>Strategi memberantas korupsi tanpa kompromi</li>
+    <li>Reformasi industri & ekspor untuk menciptakan jutaan pekerjaan</li>
+    <li>Program tunai langsung & subsidi cerdas</li>
+    <li>Pendekatan desentralisasi & eksekusi profesional</li>
+    <li>Desain pertumbuhan tanpa ketergantungan pada pembiayaan utang berlebihan</li>
+  </ul>
+</section>
+
+<section id="signup">
+  <h2>Daftar untuk Update Buku</h2>
+  <p>Isi nama, email, dan nomor HP untuk jadi yang pertama mendapatkan info bukunya.</p>
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScGOs3Ad3E6kkIW2UqIXuiPksK96NbvbfA3sNy9yzbbaQpLQw/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</section>
+
+<footer>
+  &copy; 2025 Dipo Satria Ramli. Kami tidak akan mengirim spam. Hanya info penting seputar buku ini.
 </footer>
 
 </body>
